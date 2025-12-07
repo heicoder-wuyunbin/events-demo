@@ -6,7 +6,9 @@ import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
-// this is code of  huoshan
+/**
+ * @author huoshan
+ */
 @Data
 public class Member {
     private Long id;
