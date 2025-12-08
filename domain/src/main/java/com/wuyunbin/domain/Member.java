@@ -7,7 +7,12 @@ import lombok.Data;
 import java.util.ArrayList;
 import java.util.List;
 
-//江鸿翌
+/**
+ * 会员的领域模型
+ * @author wuyunbin
+ * @date 2023/04/05
+ * 江鸿翌
+ */
 @Data
 public class Member {
     private Long id;
