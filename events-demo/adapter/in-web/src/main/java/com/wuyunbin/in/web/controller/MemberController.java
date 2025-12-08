@@ -20,7 +20,7 @@ public class MemberController {
 
     @GetMapping("index")
     public void index(){
-      System.out.println("hahahaha");
+      System.out.println("张震的test666");
         //todo 这里创建一个会员用来模拟前端传入的会员信息
         Member member =new Member();
         member.setId(System.currentTimeMillis());
