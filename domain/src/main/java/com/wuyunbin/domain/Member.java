@@ -37,4 +37,15 @@ public class Member {
         return events;
 
     }
+
+        /**
+     * 保存当前成员对象到仓库中
+     *
+     * @param memberRepository 成员数据访问仓库，用于执行保存操作
+     */
+    public void save(MemberRepository memberRepository){
+        memberRepository.save(this);
+    }
+
+
 }
