@@ -7,6 +7,12 @@ import lombok.Data;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * 会员的领域模型
+ * @author wuyunbin
+ * @date 2023/04/05
+ * 江鸿翌
+ */
 @Data
 public class Member {
     private Long id;
@@ -50,4 +56,15 @@ public class Member {
         return events;
 
     }
+
+        /**
+     * 保存当前成员对象到仓库中
+     *
+     * @param memberRepository 成员数据访问仓库，用于执行保存操作
+     */
+    public void save(MemberRepository memberRepository){
+        memberRepository.save(this);
+    }
+
+
 }
