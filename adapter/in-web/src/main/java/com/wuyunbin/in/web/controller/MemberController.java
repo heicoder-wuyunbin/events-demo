@@ -11,10 +11,6 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class MemberController {
 
-    /**
-     * 林靖雯
-     * 创建会员的用例
-     */
     @Resource
     private CreateMemberUseCase createMemberUseCase;
 
