@@ -16,24 +16,14 @@ public class CreateMemberService implements CreateMemberUseCase {
 
     @Resource
     private ApplicationEventPublisher publisher;
-
     @Override
-    public void execute(Member member) {
-        // 获取一个Member领域模型,已通过模拟的数据实现
-        // 调用领域模型提供的持久化方法
+    public void create(Member member) {
+        member.create();
         memberRepository.save(member);
 
-        member.create();
-
-        List<Object> events = member.pullDomainEvents();
-
-        if(!events.isEmpty()){
-            //通过ApplicationEventPublisher发布事件
-            events.forEach(e->{
-                publisher.publishEvent(e);
-            });
+        List<Object> events = member.pullEvents();
+        if(!events.isEmpty()) {
+            events.forEach(e -> publisher.publishEvent(e));
         }
-
-
     }
 }

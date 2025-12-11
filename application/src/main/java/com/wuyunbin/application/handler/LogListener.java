@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class LogListener {
     @EventListener
-    public void handler(CreateMemberEvent event){
-        System.out.println("日志："+ event.id() + " "+ event.name()+ "注册成功。。。");
+    public void handle(CreateMemberEvent event) {
+        System.out.println("日志监听器：" + event.getClass().getSimpleName());
     }
 }

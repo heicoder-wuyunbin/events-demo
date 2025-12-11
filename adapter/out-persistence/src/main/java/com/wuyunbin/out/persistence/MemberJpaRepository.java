@@ -8,6 +8,6 @@ import org.springframework.stereotype.Repository;
 public class MemberJpaRepository implements MemberRepository {
     @Override
     public void save(Member member) {
-        System.out.println("保存会员信息:"+member.getId()+" "+member.getName());
+        System.out.println("save member " + member);
     }
 }

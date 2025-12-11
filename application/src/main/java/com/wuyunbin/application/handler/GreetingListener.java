@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class GreetingListener {
     @EventListener
-    public void handler(CreateMemberEvent event){
-        System.out.println("GreetingListener:"+event.name());
+    public void handle(CreateMemberEvent event) {
+        System.out.println("GreetingListener: " + event.getClass().getSimpleName());
     }
 }

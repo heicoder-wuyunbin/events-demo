@@ -1,4 +1,4 @@
 package com.wuyunbin.event;
 
-public record CreateMemberEvent(Long id,String name) {
+public record CreateMemberEvent(Long id, String name) {
 }
