@@ -12,6 +12,8 @@ public class Member {
     private Long id;
     private String name;
     private String password;
+    private MemberRepository memberRepository;
+    private String email;
 
     private List<Object> domainEvents=new ArrayList<>();
     /**
