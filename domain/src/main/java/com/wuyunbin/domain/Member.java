@@ -1,5 +1,5 @@
 package com.wuyunbin.domain;
-
+//chenzeyi
 import com.wuyunbin.event.CreateMemberEvent;
 import com.wuyunbin.port.MemberRepository;
 import lombok.Data;
