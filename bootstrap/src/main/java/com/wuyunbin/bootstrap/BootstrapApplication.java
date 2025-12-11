@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication(scanBasePackages = "com.wuyunbin")
 public class BootstrapApplication {
-
+//jianhoncai
 	public static void main(String[] args) {
 
 		/** 陈玉帛
