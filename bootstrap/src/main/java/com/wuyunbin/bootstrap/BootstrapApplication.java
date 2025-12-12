@@ -8,9 +8,9 @@ public class BootstrapApplication {
 
 	public static void main(String[] args) {
 
-		/** 陈玉帛
-		 * 启动项目
-		 * */
+		/**
+		 * 到此一游
+		 */
 		SpringApplication.run(BootstrapApplication.class, args);
 	}
 
