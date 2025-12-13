@@ -6,7 +6,7 @@ import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
-
+//刘志勇
 @Data
 public class Member {
     private Long id;
