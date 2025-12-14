@@ -5,6 +5,10 @@ import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
+
+/**
+ * @author 王金鑫
+ */
 @Data
 public class Member {
     private Long id;
