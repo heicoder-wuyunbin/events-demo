@@ -6,7 +6,9 @@ import lombok.Data;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * 吴靖祥
+ */
 @Data
 public class Member {
     private Long id;
